@@ -7,7 +7,7 @@ import { IoHomeOutline } from 'react-icons/io5';
 
 const Navbar = () => {
     return (
-        <div className='shadow'>
+        <div className='shadow mb-3'>
             <nav className="navbar-container container mx-auto py-4 flex justify-between items-center">
                 <img src={logo} alt="" className="" />
                 <ul className="flex justify-center items-center gap-4">
