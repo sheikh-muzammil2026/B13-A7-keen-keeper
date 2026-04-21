@@ -18,10 +18,12 @@ const Stats = () => {
         { name: 'Video', value: allVideoCount, fill: 'blue'}
     ]
     return (
-        <div className='bg-[#F8FAFC] p-20'>
-            <h1 className='text-[#1F2937] font-bold text-5xl'>Friendship Analytics</h1>
-            <div className='shadow bg-base-100 p-5 mt-5'>
-        <PieChart style={{ width: '100%', maxWidth: '500px', maxHeight: '80vh', aspectRatio: 1 }} responsive>
+        <div className='bg-[#F8FAFC] p-10'>
+           <div className='container mx-auto '>
+             <h1 className='text-[#1F2937] font-bold text-5xl'>Friendship Analytics</h1>
+            <div className='bg-base-100 shadow p-5 mt-5'>
+                <p className='text-xl font-medium'>By Interaction Type</p>
+        <PieChart style={{ width: '100%', maxWidth: '500px', maxHeight: '80vh', aspectRatio: 1, margin: '0 auto '}} responsive>
       <Pie
         data={data}
         innerRadius="80%"
@@ -39,6 +41,7 @@ const Stats = () => {
     </PieChart>
   
             </div>
+           </div>
         </div>
     );
 };
