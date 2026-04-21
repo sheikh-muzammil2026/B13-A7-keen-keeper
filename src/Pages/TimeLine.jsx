@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { TimeLineContext } from '../Context/TimeLineContext';
 import Call from '../assets/call.png';
 import Text from '../assets/text.png';
@@ -9,7 +9,13 @@ import { IoMdArrowDropdown } from 'react-icons/io';
 const TimeLine = () => {
     const {timeLine, setTimeLine} = useContext(TimeLineContext);
         console.log(timeLine, setTimeLine, "from timeline page");
+
+        const [filter, setFilter] = useState("All");
         
+        const filteredData = filter === "All"
+                        ? timeLine
+                        : timeLine.filter(item => item.action === filter);
+                                
 
     return (
         <div className='bg-[#F8FAFC] home-container p-20'>
@@ -22,13 +28,14 @@ const TimeLine = () => {
             <div className="dropdown dropdown-start mb-4">
             <div tabIndex={0} role="button" className="btn m-1">Filter timeline <IoMdArrowDropdown /></div>
                     <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm ">
-                        <li><a>By Call</a></li>
-                        <li><a>By Text</a></li>
-                        <li><a>By Video</a></li>
+                         <li onClick={() => setFilter("All")}><a>All</a></li>
+                        <li onClick={() => setFilter("Call")}><a>By Call</a></li>
+                        <li onClick={() => setFilter("Text")}><a>By Text</a></li>
+                        <li onClick={() => setFilter("Video")}><a>By Video</a></li>
                     </ul>
             </div>
                 {
-                    timeLine.map((item,index )=>  
+                    filteredData.map((item,index )=>  
                          (<div key={index} className='container mx-auto shadow bg-base-100 p-4 mb-3'>
                            <div className='flex items-center gap-4'>
                             {item.action === "Call" && (<img src={Call} alt="" />)}
