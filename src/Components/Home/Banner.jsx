@@ -9,7 +9,7 @@ const Banner = () => {
            <div className="container mx-auto">
             {/* banner-section-container */}
             <div className=" flex flex-col justify-center items-center gap-6 py-20">
-            <h1 className='banner-title text-5xl font-bold'>Friends to keep close in your life</h1>
+            <h1 className='banner-title text-5xl font-bold text-center'>Friends to keep close in your life</h1>
             <h2 className="banner-subtitle text-center">Your personal shelf of meaningful connections. Browse, tend, and nurture the <br></br>
 relationships that matter most.</h2>
         <button className="banner-addFriends-btn btn btn-primary bg-[#244D3F]">+ Add a friends</button>
