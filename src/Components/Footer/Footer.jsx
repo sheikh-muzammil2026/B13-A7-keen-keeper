@@ -7,10 +7,10 @@ import { RxDividerHorizontal } from 'react-icons/rx';
 const Footer = () => {
     return (
        <>
-        <div className='bg-[#244D3F] p-12'>
+        <div className='bg-[#244D3F] px-2 py-8 md:p-12'>
             <div className='flex flex-col items-center gap-6 '>
-                <img  className='w-100 h-15' src={logo} alt="" />
-            <p className="footer-description text-gray-300">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+                <img  className='md:max-w-100 md:max-h-15' src={logo} alt="" />
+            <p className="footer-description text-gray-300 text-center">Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
             <div className="social-container flex flex-col justify-center items-center gap-2">
                 <p className="social-link text-gray-200 font-bold">Social Links</p>
                 <div className="social-icons-container flex items-center justify-center gap-2">
@@ -21,9 +21,9 @@ const Footer = () => {
             </div>
             </div>
               <div className="divider"></div>
-             <div className='flex justify-between items-center  text-gray-400'>
+             <div className='flex flex-col-reverse md:flex-row justify-between items-center  text-gray-400'>
                
-                <p><small>© 2026 KeenKeeper. All rights reserved.</small></p>
+                <p><small >© 2026 KeenKeeper. All rights reserved.</small></p>
                     <div>
                         <ul className='flex gap-4'>                     
                             <li><a href='#'>Privacy Policy</a></li>

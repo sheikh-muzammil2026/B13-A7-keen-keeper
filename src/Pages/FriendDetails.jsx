@@ -52,10 +52,10 @@ const FriendDetails = () => {
          <div className=' bg-[#F8FAFC]  '>
 
         {/* main-sidbar-container */}
-       <div className="container mx-auto grid grid-cols-4 gap-5 p-20">
+       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 p-2 md:p-20">
 
          {/* sidebar */}
-            <div className="1st-column col-span-1 flex flex-col items-center">
+            <div className="1st-column md:col-span-1 flex flex-col items-center">
                
                     <div className='pimary-details bg-base-100 flex flex-col justify-center items-center gap-2 mb-3 shadow p-3'>
                     <img src={expactedCard.picture} alt="" />
@@ -79,12 +79,12 @@ const FriendDetails = () => {
             </div>
              
 {/* main-section */}
-            <div className='col-span-3 flex flex-col  gap-5'>
+            <div className='md:col-span-3 flex flex-col  gap-5'>
 
                 {/* main-section-container */}
             
                 {/* 1st row start hare */}
-                    <div className='1st-row-container shadow grid grid-cols-3 gap-3'>
+                    <div className='1st-row-container shadow grid grid-cols-1 md:grid-cols-3 gap-3'>
                                {/* 1st row 1st div */}
             <div className="1st-column flex flex-col justify-center items-center gap-2 shadow bg-base-100 px-5 py-6">
                
