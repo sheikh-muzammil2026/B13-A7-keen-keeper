@@ -1,16 +1,85 @@
-# React + Vite
+# KeenKeeper — Keep Your Friendships Alive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KeenKeeper is a responsive friendship management web application built with React.  
+The app helps users keep track of their friendships, monitor communication habits, and log interactions like calls, texts, and video chats.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Project
 
-## React Compiler
+- 🌐 Live Site: [Add Your Live Link Here]
+- 💻 GitHub Repository: [Add Your GitHub Repo Link Here]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+KeenKeeper allows users to:
+
+- View and manage friend profiles
+- Track communication history
+- Log Call, Text, and Video interactions
+- Analyze friendship interaction statistics
+- Maintain relationships more consistently
+
+The project was developed following the provided Figma-inspired assignment requirements with full responsive support for mobile, tablet, and desktop devices.
+
+---
+
+## 🛠️ Technologies Used
+
+- React.js
+- React Router DOM
+- Tailwind CSS
+- DaisyUI
+- Recharts
+- React Icons
+- React Toastify
+- JSON Data
+
+---
+
+## ✨ Main Features
+
+### 🧑 Friend Management
+- Display all friends using dynamic JSON data
+- Detailed friend profile page
+- Status indicators (Overdue, Almost Due, On-Track)
+
+### ⚡ Interaction Timeline
+- Log Call, Text, and Video interactions
+- Automatically create timeline entries with current date
+- Timeline filtering by interaction type
+
+### 📊 Friendship Analytics
+- Visual Pie Chart using Recharts
+- Analytics for Call, Text, and Video interactions
+
+### 📱 Fully Responsive Design
+- Mobile-friendly layout
+- Tablet optimization
+- Desktop grid system
+
+### 🔔 Toast Notifications
+- Toast alerts for Call, Text, and Video actions
+
+### 🛡️ Additional Features
+- Custom 404 Page
+- Loading spinner while fetching data
+- Route reload support after deployment
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+│
+├── Components/
+├── Pages/
+├── Routes/
+├── Context/
+├── Hook/
+├── assets/
+├── data/
+└── main.jsx
