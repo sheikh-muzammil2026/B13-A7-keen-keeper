@@ -73,6 +73,8 @@ The project was developed following the provided Figma-inspired assignment requi
 ## 📂 Project Structure
 
 
+```bash
+
 src/
 │
 ├── assets/
