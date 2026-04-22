@@ -15,22 +15,22 @@ relationships that matter most.</h2>
         <button className="banner-addFriends-btn btn btn-primary bg-[#244D3F]">+ Add a friends</button>
            </div>
 
-           <div className="grid grid-cols-4 gap-2 justify-center items-center pb-8 px-40">
+           <div className="grid grid-cols-1 md:grid-cols-4 gap-2 justify-center items-center pb-8 px-4 md:px-40">
             
-                <div className='bg-base-100 px-8 py-6 rounded shadow flex flex-col justify-center items-center'>
-                    <p>10</p>
+                <div className='bg-base-100 px-1 py-2 md:px-8 md:py-6 rounded shadow flex flex-col justify-center items-center'>
+                    <p>8</p>
                     <p>Total Friends</p>
                 </div >
-                <div className='bg-base-100 px-8 py-6 rounded shadow flex flex-col justify-center items-center'>
+                <div className='bg-base-100 px-1 py-2 md:px-8 md:py-6 rounded shadow flex flex-col justify-center items-center'>
                     <p>3</p>
                     <p>On Track</p>
                 </div>
-                <div className='bg-base-100 px-8 py-6 rounded shadow flex flex-col justify-center items-center'>
-                    <p>6</p>
+                <div className='bg-base-100 px-1 py-2 md:px-8 md:py-6 rounded shadow flex flex-col justify-center items-center'>
+                    <p>5</p>
                     <p>Need Attention</p>
                 </div>
-                <div className='bg-base-100 px-8 py-6 rounded shadow flex flex-col justify-center items-center'>
-                    <p>10</p>
+                <div className='bg-base-100 px-1 py-2 md:px-8 md:py-6 rounded shadow flex flex-col justify-center items-center'>
+                    <p>8</p>
                     <p>Interactions This Month</p>
                 </div>
            </div>

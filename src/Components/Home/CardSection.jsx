@@ -12,8 +12,8 @@ const CardSection = () => {
     // console.log(data);
     return (
         <div className='container mx-auto py-12'>
-            <h2 className='mb-4 font-bold'>Your friends</h2>
-             <div className='grid grid-cols-4 justify-center items-center gap-3'>
+            <h2 className='mb-4 font-bold text-center md:text-left'>Your friends</h2>
+             <div className='grid grid-cols-1 p-4 md:grid-cols-4 justify-center items-center gap-3'>
                 {
                     data.map((friend, index)=> 
                         (<div key={index}>
