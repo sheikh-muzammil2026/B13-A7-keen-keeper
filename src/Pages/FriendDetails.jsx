@@ -8,6 +8,8 @@ import { FaArchive } from 'react-icons/fa';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 import { TimeLineContext } from '../Context/TimeLineContext';
 import { toast } from 'react-toastify';
+import NotFound from './NotFound';
+
 
 
 const FriendDetails = () => {
@@ -19,13 +21,15 @@ const FriendDetails = () => {
         // console.log(timeLine, setTimeLine, "from context importing");
 
          if(loading){
-           return <h1>Loading...</h1>
+           return  <div className="min-h-screen flex justify-center items-center">
+                     <span className="loading loading-spinner loading-lg"></span>
+                    </div>
         }
             const expactedCard = data?.find((card)=> card.id === Number(id) );
             // console.log(expactedCard, "from find array");
         
         if(!expactedCard){
-           return <h1>Page not found</h1>
+           return <NotFound/>
         }
 
         const handleAllBtn = (type, expactedCard) => {
@@ -52,27 +56,28 @@ const FriendDetails = () => {
          <div className=' bg-[#F8FAFC]  '>
 
         {/* main-sidbar-container */}
-       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 p-2 md:p-20">
+       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 p-2 gap-4 md:p-20">
 
          {/* sidebar */}
             <div className="1st-column md:col-span-1 flex flex-col items-center">
                
-                    <div className='pimary-details bg-base-100 flex flex-col justify-center items-center gap-2 mb-3 shadow p-3'>
+                    <div className='pimary-details bg-base-100 flex flex-col justify-center items-center gap-2 mb-3 shadow rounded-lg p-3 hover:shadow-lg transition'>
                     <img src={expactedCard.picture} alt="" />
-            <p className="frined-name font-bold">{expactedCard.name}</p>
-            <p className={` text-white py-1 px-2 rounded-full
+            <p className="frined-name font-semibold text-lg truncate">{expactedCard.name}</p>
+            <p className={` text-white py-1 px-2 rounded-full text-sm w-fit
                   ${expactedCard.status === "on-track" && 'bg-[#244D3F]' } 
                   ${expactedCard.status === "overdue" && 'bg-red-500' } 
                   ${expactedCard.status === "almost due" && 'bg-[#EFAD44]'}`}>{expactedCard.status}</p>
-             <p className="tags bg-[#CBFADB] py-1 px-2 rounded-full">{expactedCard.tags.toUpperCase()}</p>
+             <p className="tags bg-[#CBFADB] py-1 px-2 rounded-full text-xs w-fit">{expactedCard.tags?.toUpperCase()}</p>
              <p className="text-center ">{expactedCard.bio}</p>
+             <p className="text-gray-500">{expactedCard.email}</p>
                 </div>
 
 
                 <div className="three-btn-container w-full flex flex-col gap-2">
-                    <button className="btn w-full bg-base-100"><HiOutlineBellSnooze/>Snooze 2 weeks</button>
-                    <button className="btn w-full bg-base-100"><FaArchive />Archive</button>
-                    <button className="btn w-full bg-base-100 text-red-500"><RiDeleteBin6Line/>Delete</button>
+                    <button className="btn w-full bg-base-100 rounded-lg"><HiOutlineBellSnooze/>Snooze 2 weeks</button>
+                    <button className="btn w-full bg-base-100 rounded-lg"><FaArchive />Archive</button>
+                    <button className="btn w-full bg-base-100 text-red-500 rounded-lg"><RiDeleteBin6Line/>Delete</button>
                 </div>
                 
 
@@ -84,9 +89,9 @@ const FriendDetails = () => {
                 {/* main-section-container */}
             
                 {/* 1st row start hare */}
-                    <div className='1st-row-container shadow grid grid-cols-1 md:grid-cols-3 gap-3'>
+                    <div className='1st-row-container shadow  grid grid-cols-1 md:grid-cols-3 gap-3'>
                                {/* 1st row 1st div */}
-            <div className="1st-column flex flex-col justify-center items-center gap-2 shadow bg-base-100 px-5 py-6">
+            <div className="1st-column  rounded-lg flex flex-col justify-center items-center gap-2 shadow bg-base-100 px-5 py-6">
                
                     <p className='font-bold'>{expactedCard.days_since_contact}</p>
                     <p className='text-[#64748B]'>Days Since Contact</p>
@@ -94,14 +99,14 @@ const FriendDetails = () => {
             </div>
 
                 {/* 1st row 2nd div */}
-            <div className="1st-column flex flex-col justify-center items-center gap-2 shadow bg-base-100 px-5 py-6">
+            <div className="1st-column flex rounded-lg flex-col justify-center items-center gap-2 shadow bg-base-100 px-5 py-6">
                
             <p className='font-bold'>{expactedCard.goal}</p>
             <p className='text-[#64748B]'>Goal (Days)</p>
             </div>
 
                 {/* 1st row 3rd div */}
-            <div className="1st-column flex flex-col justify-center items-center gap-2 shadow bg-base-100 px-5 py-6">
+            <div className="1st-column rounded-lg flex flex-col justify-center items-center gap-2 shadow bg-base-100 px-5 py-6">
                
             <p className="frined-name font-bold">{expactedCard.next_due_date}</p>
             <p className='text-[#64748B]'>Next Due</p>
@@ -109,7 +114,7 @@ const FriendDetails = () => {
                 </div>
                 
                 {/* 2nd row container */}
-                <div className='bg-base-100 shadow p-5'>
+                <div className='bg-base-100 shadow p-5 rounded-lg'>
                     <div className='flex justify-between'>
                         <p>Relationship Goal</p>
                         <button className="btn">Edit</button>
@@ -118,12 +123,12 @@ const FriendDetails = () => {
                 </div>
 
                 {/* 3rd row Quick Check-In container */}
-                <div className='bg-base-100 shadow p-5'>
+                <div className='bg-base-100 shadow p-5 rounded-lg'>
                     <p className='font-bold mb-2'>Quick Check-In</p>
-                    <div className="btn-container grid grid-cols-3 gap-2">
-                        <button onClick={()=> handleAllBtn("Call", expactedCard)} className="btn h-auto p-4"><span className='text-center text-xl font-medium  flex justify-center items-center flex-col'> <TbPhoneCall className='h-auto w-7' />Call</span></button>
-                        <button onClick={()=> handleAllBtn("Text", expactedCard)} className="btn h-auto p-4"><span className='text-center text-xl font-medium flex justify-center items-center flex-col'> <LuMessageSquareText  className='h-auto w-7' />Text </span></button>
-                        <button onClick={()=> handleAllBtn("Video", expactedCard)} className="btn h-auto p-4"><span className='text-center text-xl  font-medium flex justify-center items-center flex-col'><LuVideo className='h-auto w-7' />Video</span></button>
+                    <div className="btn-container grid  grid-cols-1 sm:grid-cols-3 gap-2">
+                        <button onClick={()=> handleAllBtn("Call", expactedCard)} className="btn h-auto p-4 rounded-lg"><span className='text-center text-base md:text-xl font-medium  flex justify-center items-center flex-col'> <TbPhoneCall className='h-auto w-7' />Call</span></button>
+                        <button onClick={()=> handleAllBtn("Text", expactedCard)} className="btn h-auto p-4 rounded-lg"><span className='text-center text-base md:text-xl font-medium flex justify-center items-center flex-col'> <LuMessageSquareText  className='h-auto w-7' />Text </span></button>
+                        <button onClick={()=> handleAllBtn("Video", expactedCard)} className="btn h-auto p-4 rounded-lg"><span className='text-center text-base md:text-xl  font-medium flex justify-center items-center flex-col'><LuVideo className='h-auto w-7' />Video</span></button>
                     </div>
                 </div>
                 
