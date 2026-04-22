@@ -56,3 +56,5 @@ const TimeLine = () => {
 };
 
 export default TimeLine;
+
+// The project has been made responsive.
