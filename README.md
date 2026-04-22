@@ -7,8 +7,8 @@ The app helps users keep track of their friendships, monitor communication habit
 
 ## 🚀 Live Project
 
-- 🌐 Live Site: [Add Your Live Link Here]
-- 💻 GitHub Repository: [Add Your GitHub Repo Link Here]
+- 🌐 Live Site: https://my-a7-keen-keeper.netlify.app/
+- 💻 GitHub Repository: https://github.com/sheikh-muzammil2026/B13-A7-keen-keeper
 
 ---
 
@@ -22,7 +22,6 @@ KeenKeeper allows users to:
 - Analyze friendship interaction statistics
 - Maintain relationships more consistently
 
-The project was developed following the provided Figma-inspired assignment requirements with full responsive support for mobile, tablet, and desktop devices.
 
 ---
 
@@ -81,5 +80,59 @@ src/
 ├── Context/
 ├── Hook/
 ├── assets/
-├── data/
+├── Layout/
+├── ui/
 └── main.jsx
+
+##📋 Pages Included
+🏠 Home Page
+👤 Friend Details Page
+📜 Timeline Page
+📊 Stats Page
+❌ 404 Error Page
+🔥 Key Functionalities
+✅ Quick Check-In
+
+##Users can:
+
+📞 Call
+💬 Text
+🎥 Video Chat
+
+##Each interaction:
+
+Adds a timeline entry
+Saves the current date
+Shows a toast notification
+
+##📊 Timeline Features
+View interaction history
+Filter by:
+Call
+Text
+Video
+Timeline icons for each interaction type
+
+##🎯 Assignment Requirements Covered
+Responsive Design
+Dynamic JSON Friend Data
+Routing with React Router
+Toast Notifications
+Timeline Interaction System
+Analytics Chart
+Loading Animation
+404 Page
+Deployment Ready
+🚀 Deployment
+
+##This project can be deployed on:
+Netlify
+
+
+👨‍💻 Developer
+
+Developed by Sheikh Muzammil
+
+📜 License
+
+This project is created for educational and assignment purposes.
