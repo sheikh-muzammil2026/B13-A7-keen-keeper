@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Mahmuda Sultana",
-    "picture": "../public/Ellipse 1(2).png",
+    "picture": "/Ellipse-(2).png",
     "email": "arif.hasan@gmail.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Sabbir Ahmed",
-    "picture": "../public/Ellipse 1(3).png",
+    "picture": "/Ellipse-1(3).png",
     "email": "sabbir.ahmed@yahoo.com",
     "days_since_contact": 12,
     "status": "almost due",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Arif Hasan",
-    "picture": "../public/Ellipse 1(4).png",
+    "picture": "/Ellipse-1(4).png",
     "email": "nusrat.jahan@gmail.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Rakib Chowdhury",
-    "picture": "../public/Ellipse 1(5).png",
+    "picture": "/Ellipse-1(5).png",
     "email": "rakib.c@gmail.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Farhana Rahman",
-    "picture": "../public/Ellipse 1(1).png",
+    "picture": "/Ellipse-1(6).png",
     "email": "farhana.rahman@gmail.com",
     "days_since_contact": 13,
     "status": "almost due",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Jubayda Rahman",
-    "picture": "../public/Ellipse 1(6).png",
+    "picture": "/Ellipse-1(7).png",
     "email": "imran.hossain@gmail.com",
     "days_since_contact": 3,
     "status": "on-track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Putul Mujib",
-    "picture": "../public/Ellipse 1(7).png",
+    "picture": "/Ellipse-1.png",
     "email": "tamim.iqbal@gmail.com",
     "days_since_contact": 16,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Shahed Alom",
-    "picture": "../public/Ellipse 1(8).png",
+    "picture": "/Ellipse-1(8).png",
     "email": "ayesha.siddika@gmail.com",
     "days_since_contact": 9,
     "status": "on-track",
