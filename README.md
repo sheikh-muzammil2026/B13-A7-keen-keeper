@@ -8,7 +8,7 @@ The app helps users keep track of their friendships, monitor communication habit
 ## 🚀 Live Project
 
 - 🌐 Live Site: https://my-a7-keen-keeper.netlify.app/
-- 💻 GitHub Repository:  https://github.com/sheikh-muzammil2026/B13-A7-keen-keeper
+- 💻 GitHub Repository: https://github.com/sheikh-muzammil2026/B13-A7-keen-keeper
 
 ---
 
@@ -42,28 +42,34 @@ The project was developed following the provided Figma-inspired assignment requi
 ## ✨ Main Features
 
 ### 🧑 Friend Management
+
 - Display all friends using dynamic JSON data
 - Detailed friend profile page
 - Status indicators (Overdue, Almost Due, On-Track)
 
 ### ⚡ Interaction Timeline
+
 - Log Call, Text, and Video interactions
 - Automatically create timeline entries with current date
 - Timeline filtering by interaction type
 
 ### 📊 Friendship Analytics
+
 - Visual Pie Chart using Recharts
 - Analytics for Call, Text, and Video interactions
 
 ### 📱 Fully Responsive Design
+
 - Mobile-friendly layout
 - Tablet optimization
 - Desktop grid system
 
 ### 🔔 Toast Notifications
+
 - Toast alerts for Call, Text, and Video actions
 
 ### 🛡️ Additional Features
+
 - Custom 404 Page
 - Loading spinner while fetching data
 - Route reload support after deployment
@@ -72,7 +78,7 @@ The project was developed following the provided Figma-inspired assignment requi
 
 ## 📂 Project Structure
 
-
+```bash
 src/
 │
 ├── assets/
@@ -84,60 +90,79 @@ src/
 ├── Routers/
 ├── ui/
 └── main.jsx
+```
 
 ---
-### 📋 Pages Included
-🏠 Home Page
-👤 Friend Details Page
-📜 Timeline Page
-📊 Stats Page
-❌ 404 Error Page
-🔥 Key Functionalities
-✅ Quick Check-In
 
-### Users can:
+## 📋 Pages Included
 
-📞 Call
-💬 Text
-🎥 Video Chat
+- 🏠 Home Page
+- 👤 Friend Details Page
+- 📜 Timeline Page
+- 📊 Stats Page
+- ❌ 404 Error Page
+
+---
+
+## 🔥 Key Functionalities
+
+### ✅ Quick Check-In
+
+Users can:
+
+- 📞 Call
+- 💬 Text
+- 🎥 Video Chat
 
 ### Each interaction:
 
-Adds a timeline entry
-Saves the current date
-Shows a toast notification
+- Adds a timeline entry
+- Saves the current date
+- Shows a toast notification
 
-### 📊 Timeline Features
-View interaction history
-Filter by:
-Call
-Text
-Video
-Timeline icons for each interaction type
+---
 
-### 🎯 Assignment Requirements Covered
-Responsive Design
-Dynamic JSON Friend Data
-Routing with React Router
-Toast Notifications
-Timeline Interaction System
-Analytics Chart
-Loading Animation
-404 Page
-Deployment Ready
+## 📊 Timeline Features
 
+- View interaction history
+- Filter by:
+  - Call
+  - Text
+  - Video
+- Timeline icons for each interaction type
 
-### 🧠 Future Improvements
-Search timeline entries
-Sort interactions by newest/oldest
-Add authentication system
-Database integration
-Real-time reminders
+---
 
-### 👨‍💻 Developer
+## 🎯 Assignment Requirements Covered
 
-Developed by Sheikh Muzammil
+- Responsive Design
+- Dynamic JSON Friend Data
+- Routing with React Router
+- Toast Notifications
+- Timeline Interaction System
+- Analytics Chart
+- Loading Animation
+- 404 Page
+- Deployment Ready
 
-### 📜 License
+---
+
+## 🧠 Future Improvements
+
+- Search timeline entries
+- Sort interactions by newest/oldest
+- Add authentication system
+- Database integration
+- Real-time reminders
+
+---
+
+## 👨‍💻 Developer
+
+Developed by **Sheikh Muzammil**
+
+---
+
+## 📜 License
 
 This project is created for educational and assignment purposes.
