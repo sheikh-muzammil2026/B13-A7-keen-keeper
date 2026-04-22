@@ -18,15 +18,15 @@ const TimeLine = () => {
                                 
 
     return (
-        <div className='bg-[#F8FAFC] home-container p-20'>
+        <div className='bg-[#F8FAFC] home-container p-2 md:p-20'>
            <div>
 
             {/* timeline page headline */}
-            <h1 className='text-5xl font-bold mb-4'>Timeline </h1>
+            <h1 className='text-5xl font-bold mb-4 text-center md:text-left'>Timeline </h1>
 
             {/* timeline page filter button */}
-            <div className="dropdown dropdown-start mb-4">
-            <div tabIndex={0} role="button" className="btn m-1">Filter timeline <IoMdArrowDropdown /></div>
+            <div className="dropdown dropdown-start mb-4 ">
+            <div tabIndex={0} role="button" className="btn m-1 ">Filter timeline <IoMdArrowDropdown /></div>
                     <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm ">
                          <li onClick={() => setFilter("All")}><a>All</a></li>
                         <li onClick={() => setFilter("Call")}><a>By Call</a></li>
